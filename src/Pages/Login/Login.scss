@@ -1,0 +1,12 @@
+.Input_outer{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.Input_inner{
+    display: flex;
+    flex-direction: column;
+}
+.Input_inner_content{
+    width: 80%;
+}
