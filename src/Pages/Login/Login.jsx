@@ -44,70 +44,73 @@ function Login() {
   };
 
   return (
-    <div className="login_Outer">
-      <div className="Login_Topbar_container">
-        <TopBar />
-      </div>
-      <div className="Login_Inner_Container">
-        <div className="Login_Inner">
-          <div className="Login_ProfileUpload">
-            <ProfileUpload />
-          </div>
-          <div className="Login_Inner_content">
-            <div className="Login_title">Login</div>
-            <div className="Login_Subtitle">Enter your details to login</div>
-          </div>
-          <div className="Login_inner_input">
-            <form action="Post" className="Login_Form">
-              <div className="Login_input_email">
-                <Input
-                  type="email"
-                  placeholder="test@test.com"
-                  label="Email Address"
-                  required={true}
-                  disabled={false}
-                  img={EmailIcon}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
+    <>
+      <div className="login_Outer">
+        <div className="Login_Topbar_container">
+          <TopBar />
+        </div>
+        <div className="Login_Inner_Container">
+          <div className="Login_Inner">
+            <div className="Login_ProfileUpload">
+              <ProfileUpload />
+            </div>
+            <div className="Login_Inner_content">
+              <div className="Login_title">Login</div>
+              <div className="Login_Subtitle">Enter your details to login</div>
+            </div>
+            <div className="Login_inner_input">
+              <form action="Post" className="Login_Form">
+                <div className="Login_input_email">
+                  <Input
+                    type="email"
+                    placeholder="test@test.com"
+                    label="Email Address"
+                    required={true}
+                    disabled={false}
+                    img={EmailIcon}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                </div>
+                <div className="Login_input_password">
+                  <Input
+                    type="Password"
+                    placeholder="Enter your password"
+                    label="Password"
+                    required={true}
+                    disabled={false}
+                    img={LockIcon}
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
+                </div>
+                <div className="Error">{error}</div>
+                <div className="Login_form_button">
+                  <Button
+                    type="submit"
+                    text="Login"
+                    bgColor="#8CCFB7"
+                    disabled={false}
+                    color="#0A0D14"
+                    fontfamily="Inter-SemiBold"
+                    height="2.5rem"
+                    border="none"
+                    width="100%"
+                    onClick={handleButtonClick}
+                  />
+                </div>
+              </form>
+              <div className="Login_SignUp">
+                Already have an account? &nbsp;
+                <a href="/" className="Login_Signup_link">
+                  {" "}
+                  Login
+                </a>
               </div>
-              <div className="Login_input_password">
-                <Input
-                  type="Password"
-                  placeholder="Enter your password"
-                  label="Password"
-                  required={true}
-                  disabled={false}
-                  img={LockIcon}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-              </div>
-              <div className="Error">{error}</div>
-              <div className="Login_form_button">
-                <Button
-                  type="submit"
-                  text="Login"
-                  bgColor="#8CCFB7"
-                  disabled={false}
-                  color="#0A0D14"
-                  fontfamily="Inter-SemiBold"
-                  height="2.5rem"
-                  border="none"
-                  width="100%"
-                  onClick={handleButtonClick}
-                />
-              </div>
-            </form>
-            <div className="Login_SignUp">
-              Already have an account? &nbsp;
-              <a href="/" className="Login_Signup_link">
-                {" "}
-                Login
-              </a>
             </div>
           </div>
         </div>
+        <div className="Footer">@ 2023 Synergy HR</div>
       </div>
-    </div>
+    </>
   );
 }
 

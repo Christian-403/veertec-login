@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   background-image: url("../../Assets/images/Pattern.png");
-  padding-top: 3rem;
+  padding: 3rem 0 3rem 0;
 }
 .Login_Inner_content {
   display: flex;
@@ -16,10 +16,12 @@
 .Login_title {
   font-family: "Inter-SemiBold";
   height: 2rem;
+  font-size: 0.9rem;
 }
 .Login_Subtitle {
-  font-size: 1rem;
+  font-family: "Inter-SemiBold";
   color: #525866;
+  font-size: 0.9rem;
 }
 .Login_ProfileUpload {
   display: flex;
@@ -49,6 +51,7 @@
   align-items: center;
   font-family: "Inter-Regular";
   padding-top: 1.5rem;
+  font-size: 14px;
 }
 .Login_Signup_link {
   color: #8ccfb7;
@@ -59,3 +62,15 @@
   flex-wrap: wrap;
   max-width: 16rem;
 }
+.Footer {
+  position: fixed;
+
+  padding: 0.9rem;
+  width: 50%;
+  font-family: "Inter-Regular";
+  color: #525866;
+  font-size: 14px;
+  bottom: 0;
+}
+
+
