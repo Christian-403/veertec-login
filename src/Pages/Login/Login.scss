@@ -1,12 +1,76 @@
-.Input_outer{
-display: flex;
-justify-content: center;
-align-items: center;
+.Login_Inner_Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../Assets/images/Pattern.png");
+  padding: 3rem 0 3rem 0;
 }
-.Input_inner{
-    display: flex;
-    flex-direction: column;
+.Login_Inner_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.Input_inner_content{
-    width: 80%;
+
+.Login_title {
+  font-family: "Inter-SemiBold";
+  height: 2rem;
+  font-size: 0.9rem;
 }
+.Login_Subtitle {
+  font-family: "Inter-SemiBold";
+  color: #525866;
+  font-size: 0.9rem;
+}
+.Login_ProfileUpload {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Login_Form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Login_inner_input {
+  width: 100%;
+}
+.Login_input_email {
+  padding-top: 1rem;
+}
+.Login_input_password {
+  padding-top: 2rem;
+}
+.Login_form_button {
+  padding-top: 1rem;
+}
+.Login_SignUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter-Regular";
+  padding-top: 1.5rem;
+  font-size: 14px;
+}
+.Login_Signup_link {
+  color: #8ccfb7;
+}
+.Error {
+  color: red;
+  font-size: 0.9rem;
+  flex-wrap: wrap;
+  max-width: 16rem;
+}
+.Footer {
+  position: fixed;
+
+  padding: 0.9rem;
+  width: 50%;
+  font-family: "Inter-Regular";
+  color: #525866;
+  font-size: 14px;
+  bottom: 0;
+}
+
+
