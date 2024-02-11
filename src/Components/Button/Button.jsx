@@ -13,18 +13,24 @@ function Button({
   disabled,
   onClick,
   cursor,
+  gap,
+  border,
+  color
+
 }) {
   const buttonStyle = {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    border: `2px solid ${borderColor}`,
+    border: border ||`2px solid ${borderColor}`,
     borderRadius: borderRadius || "0.6rem",
-    backgroundColor: bgColor,
-    fontFamily: fontfamily,
+    backgroundColor: bgColor || "#FFFFFF",
+    fontFamily: fontfamily || "Inter-Regular",
     width: width || "auto",
     height: height || "auto",
     cursor: disabled ? "not-allowed" : cursor || "pointer",
+    gap: gap || "4px",
+    color: color || "#FFFFFF"
   };
   return (
     <button
