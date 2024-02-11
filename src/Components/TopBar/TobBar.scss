@@ -1,0 +1,24 @@
+.TopBar_Outer {
+  display: flex;
+  justify-content: flex-end;
+  height: 5.5rem;
+  align-items: center;
+  border-bottom: 1px solid #e2e4e9;
+  font-family: "Inter-Regular";
+  font-size: 0.875rem;
+  color: #525866;
+
+}
+.TopBar_Inner {
+  width: 100%;
+}
+.TopbBar_Inner_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.75rem;
+  width: 95%;
+}
+
+
