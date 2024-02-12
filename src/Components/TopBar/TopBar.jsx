@@ -3,14 +3,12 @@ import "./TobBar.scss";
 import Button from "../Button/Button";
 import Headphones from "../../Assets/images/headphone-line.png";
 import Close from "../../Assets/images/Close.png";
-import UseInnerWidth from "../../Hooks/useInnerWidth";
 
 const TopBar = () => {
-  const width = UseInnerWidth();
   return (
     <div className="TopBar_Outer">
       <div className="TopBar_Inner">
-        <div className="TopbBar_Inner_content">
+        <div className="TopBar_Inner_content">
           <div className="TopBar_help">Need help?</div>
           <div className="TopBar_help_button">
             <Button

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, {useState } from "react";
 import "./Login.scss";
 import TopBar from "../../Components/TopBar/TopBar";
 import ProfileUpload from "../../Components/ProfileUpload/ProfileUpload";
@@ -22,7 +22,7 @@ function Login() {
     const emailRegExp = new RegExp(
       "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}"
     );
-    if (!emailRegExp.test(email) || email == "") {
+    if (!emailRegExp.test(email) || email === "") {
       setEmailError("Please Enter a valid email!");
       return;
     }
