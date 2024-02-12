@@ -3,16 +3,15 @@
   justify-content: flex-end;
   height: 5.5rem;
   align-items: center;
-  border-bottom: 1px solid #e2e4e9;
+  border-bottom: 1px solid var(--gray);
   font-family: "Inter-Regular";
   font-size: 0.875rem;
-  color: #525866;
-
+  color: var(--darkgray);
 }
 .TopBar_Inner {
   width: 100%;
 }
-.TopbBar_Inner_content {
+.TopBar_Inner_content {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -20,5 +19,14 @@
   gap: 0.75rem;
   width: 95%;
 }
-
-
+@media only screen and (min-width: 1800px) {
+  .TopBar_Outer {
+    height: 10rem;
+  }
+  .TopBar_help {
+    font-size: 2rem;
+  }
+  .TopBar_close_button{
+    width: 4rem;
+  }
+}
