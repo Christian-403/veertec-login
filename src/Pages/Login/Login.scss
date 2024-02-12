@@ -12,16 +12,18 @@
   justify-content: center;
   align-items: center;
 }
-
+.Login_Inner{
+  width: 34%;
+}
 .Login_title {
   font-family: "Inter-SemiBold";
   height: 2rem;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
 }
 .Login_Subtitle {
   font-family: "Inter-SemiBold";
-  color: #525866;
-  font-size: 0.9rem;
+  color: var(--darkgray);
+  font-size: 1rem;
 }
 .Login_ProfileUpload {
   display: flex;
@@ -54,23 +56,58 @@
   font-size: 14px;
 }
 .Login_Signup_link {
-  color: #8ccfb7;
+  color: var(--green);
 }
 .Error {
-  color: red;
+  color: var(--red);
   font-size: 0.9rem;
   flex-wrap: wrap;
-  max-width: 16rem;
+  max-width: 100%;
 }
 .Footer {
   position: fixed;
-
   padding: 0.9rem;
   width: 50%;
   font-family: "Inter-Regular";
-  color: #525866;
+  color: var(--darkgray);
   font-size: 14px;
   bottom: 0;
 }
 
-
+@media only screen and (min-width: 1800px) {
+  .Login_title {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+  .Login_Subtitle {
+    font-size: 2rem;
+    padding-top: 1rem;
+  }
+  .Login_SignUp {
+    font-size: 2rem;
+  }
+  .Footer {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .Footer {
+    position: unset;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  .Login_Inner{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 500px) and (max-width:768px) {
+  .Login_Inner{
+    width: 24rem;
+  }
+}

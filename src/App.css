@@ -1,3 +1,12 @@
+:root{
+  --gray: #E2E4E9;
+  --green: #8CCFB7;
+  --White: #FFFFFF;
+  --darkgray:#525866;
+  --red:#FF0000;
+  --lightgray:#f0f0f0;
+  --black:#0A0D14;
+}
 @font-face {
   font-family: "Inter-Bold";
   src: url("D:\Projects\veertec-login\src\Assets\fonts\Inter-Bold.ttf");

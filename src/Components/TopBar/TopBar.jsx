@@ -8,7 +8,7 @@ const TopBar = () => {
   return (
     <div className="TopBar_Outer">
       <div className="TopBar_Inner">
-        <div className="TopbBar_Inner_content">
+        <div className="TopBar_Inner_content">
           <div className="TopBar_help">Need help?</div>
           <div className="TopBar_help_button">
             <Button
@@ -16,22 +16,19 @@ const TopBar = () => {
               text="Contact Us"
               fontfamily="Inter-Regular"
               img={Headphones}
-              bgColor="#FFFFFF"
+              bgColor='var(--white)'
               disabled={false}
-              borderColor="#E2E4E9"
-              color="#525866"
-              onClick={() => {
-                alert("This button will navigate to Contact Us page");
-              }}
+              borderColor='var(--gray)'
+              color='var(--darkgray)'
+              padding=" 0.5rem"
+              onClick={() => {}}
             />
           </div>
-          <Button
-          type="button"
-          img={Close}
-          border="none"
-          bgColor="#FFFFFF"
-          disabled={false}
-          onClick={()=>{}}
+          <img
+            className="TopBar_close_button"
+            src={Close}
+            alt="Close button"
+            onClick={() => {}}
           />
         </div>
       </div>
