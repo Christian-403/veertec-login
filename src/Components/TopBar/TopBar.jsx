@@ -3,8 +3,10 @@ import "./TobBar.scss";
 import Button from "../Button/Button";
 import Headphones from "../../Assets/images/headphone-line.png";
 import Close from "../../Assets/images/Close.png";
+import UseInnerWidth from "../../Hooks/useInnerWidth";
 
 const TopBar = () => {
+  const width = UseInnerWidth();
   return (
     <div className="TopBar_Outer">
       <div className="TopBar_Inner">
@@ -16,22 +18,19 @@ const TopBar = () => {
               text="Contact Us"
               fontfamily="Inter-Regular"
               img={Headphones}
-              bgColor="#FFFFFF"
+              bgColor='var(--white)'
               disabled={false}
-              borderColor="#E2E4E9"
-              color="#525866"
-              onClick={() => {
-                alert("This button will navigate to Contact Us page");
-              }}
+              borderColor='var(--gray)'
+              color='var(--darkgray)'
+              padding=" 0.5rem"
+              onClick={() => {}}
             />
           </div>
-          <Button
-          type="button"
-          img={Close}
-          border="none"
-          bgColor="#FFFFFF"
-          disabled={false}
-          onClick={()=>{}}
+          <img
+            className="TopBar_close_button"
+            src={Close}
+            alt="Close button"
+            onClick={() => {}}
           />
         </div>
       </div>
